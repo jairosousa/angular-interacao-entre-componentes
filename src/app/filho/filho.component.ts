@@ -1,4 +1,4 @@
-import { Component, Input, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filho',
@@ -9,10 +9,9 @@ export class FilhoComponent {
 
   @Input() pais: string;
 
-  ngOnChanges(changes: SimpleChanges) {
-    for (let change in changes) {
-      this.pais = (changes[change].currentValue && changes[change].currentValue.trim()) || '<País não informado>';
-    }
-  }
+  @Output() votado = new EventEmitter<string>();
 
+  vota(pais: string) {
+    this.votado.emit(pais);
+  }
 }

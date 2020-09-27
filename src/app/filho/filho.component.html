@@ -1,3 +1,5 @@
-<p>Nome do país: {{ pais }}</p>
+<button (click)="vota(pais)">{{ pais }}</button>
 
-<!-- os nomes dos países são mostrados na tela. -->
+<!-- Associamos um evento de click ao método vota para cada botão exibido na tela.
+    O parâmetro passado é o nome do país e ao clicar em qualquer um desses botões 
+    o nome do país votado será mostrado na tela. -->

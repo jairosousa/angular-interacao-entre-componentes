@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PaiComponent {
 
-  nomes = ["Jairo", "Silvana", " ", "Caio"];
+  paises = ['Brasil', 'Estados Unidos', ' ', 'Israel'];
 
 }

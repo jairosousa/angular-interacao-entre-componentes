@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PaiComponent {
 
-  nomePai = 'Jairo';
+  nomes = ["Jairo", "Silvana", " ", "Caio"];
 
 }
